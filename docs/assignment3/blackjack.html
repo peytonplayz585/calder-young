@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blackjack</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="blackjack.js"></script>
+		<link rel="stylesheet" type="text/css" href="blackjack.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h1 id="header">Blackjack</h1>
+			<div class="indent">
+				<h3 style="padding: 10px 0px;">Dealer:</h3>
+				<div class="hand">
+					<p class="card" id="dealer-1">
+						<br />
+						<b>(Nothing)</b>
+						<br />
+					</p>
+					<p class="card" id="dealer0" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="dealer1" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="dealer2" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="dealer3" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="dealer4" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="dealerHidden" style="display:none;">
+						<br />
+						<b>(Hidden)</b>
+						<br />
+					</p>
+				</div>
+				<h3 style="padding: 10px 0px;">You:</h3>
+				<div class="hand">
+					<p class="card" id="player-1">
+						<br />
+						<b>(Nothing)</b>
+						<br />
+					</p>
+					<p class="card" id="player0" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="player1" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="player2" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="player3" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+					<p class="card" id="player4" style="display:none;opacity:0.0;">
+						<img src="hearts.png" width="50" height="50" />
+						<br />
+						<span class="suit">Hearts</span>
+						<br />
+						<b class="count">10</b>
+					</p>
+				</div>
+				<h2 style="text-align:center;margin:30px 0px;display:none;" id="winner">You win!</h2>
+				<p style="text-align:center;">
+					<b>You have $<span id="you_have">50.00</span></b>&emsp;&emsp;
+					<span style="zoom:1.5;">
+						<button id="pass" style="display:none;">Pass</button>&ensp;
+						<button id="hit" style="display:none;">Hit</button>&ensp;
+						<button id="restart">Start Game</button>
+					</span>&emsp;&emsp;
+					<b>Your bet: $ <input type="text" id="your_bet" style="width:3.5em;" value="25.00" /></b>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

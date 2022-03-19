@@ -1,0 +1,28 @@
+body {
+	margin: 0px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+#board {
+	margin: 20px auto;
+}
+#board div {
+	border: 3px solid white;
+	width: 128px;
+	height: 128px;
+	margin: 5px;
+	cursor: pointer;
+}
+#board div.x {
+	background-image: url("x.png");
+	cursor: initial;
+}
+#board div.o {
+	background-image: url("o.png");
+	cursor: initial;
+}
+#normalHeader, #winnerHeader {
+	height: 100px;
+}

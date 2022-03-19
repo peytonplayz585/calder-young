@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type="text/javascript" src="game.js"></script>
+	</head>
+	<body>
+		<div id="normalHeader">
+			<h1>Tic Tac Toe</h1>
+			<h3>It is <span id="XorO">X</span>'s turn, click anywhere</h3>
+		</div>
+		<div id="winnerHeader" style="display:none;">
+			<h1 style="font-size:3em;" id="XorOwinner">empty</h1>
+		</div>
+		<table id="board">
+			<tbody>
+				<tr>
+					<td><div id="b00"></div></td>
+					<td><div id="b10"></div></td>
+					<td><div id="b20"></div></td>
+				</tr>
+				<tr>
+					<td><div id="b01"></div></td>
+					<td><div id="b11"></div></td>
+					<td><div id="b21"></div></td>
+				</tr>
+				<tr>
+					<td><div id="b02"></div></td>
+					<td><div id="b12"></div></td>
+					<td><div id="b22"></div></td>
+				</tr>
+			</tbody>
+		</table>
+		<p><button id="reset">Reset Board</button></p>
+	</body>
+</html>

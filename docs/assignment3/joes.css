@@ -1,0 +1,81 @@
+
+body {
+	margin: 0px;
+	font-family: Ubuntu, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,li {
+	margin-block-start: 5px;
+	margin-block-end: 5px;
+}
+
+.indent {
+	margin-left: 30px;
+}
+
+#container {
+	width: 50%;
+	min-width: min(100vw, 500px);
+	max-width: 800px;
+	margin: auto;
+	padding: 0px 20px;
+}
+
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+#take_order .menu_item {
+	margin: 10px 0px;
+	padding: 10px;
+	border: 1px solid black;
+	transition: background 0.2s ease;
+	cursor: pointer;
+	position: relative;
+}
+
+#take_order .menu_item:hover {
+	background-color: #F2F2F2;
+}
+
+#receipt_total {
+	padding-left: 10%;
+	font-weight: bold;
+}
+
+#to_clear {
+	color: #999999;
+}
+
+#take_order .menu_item .cart {
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	height: 16px;
+	margin: 20px 10px;
+	position: absolute;
+	right: 5px;
+	top: calc(50% - 35px);
+	border: 2px solid black;
+}
+
+#to_clear {
+	display: inline-block;
+	width: calc(100% - 170px);
+	font-size: 1.1em;
+	padding-top: 10px;
+}
+
+#total {
+	display: inline-block;
+	padding: 10px;
+	width: 140px;
+}
+
+#total_price {
+	display: inline-block;
+	border: 2px solid black;
+	margin: 0px 10px;
+	padding: 5px 10px;
+}

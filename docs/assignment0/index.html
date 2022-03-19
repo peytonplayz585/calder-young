@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>Assignment 1</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+		<style type="text/css">
+			body {
+				font-family: 'Libre Baskerville';
+				text-align: center;
+				background-image: url('bk.jpg');
+				background-size: cover;
+				background-position: center;
+				color: white;
+				position: relative;
+			}
+			h1 {
+				font-size: 3.5em;
+			}
+			h1,h2,h3,h4,h5 {
+				font-family: 'Rowdies';
+				margin: 10px;
+			}
+			#columns, .cardfirst {
+				min-width: min(100vw, 500px);
+				width: 40vw;
+				margin: auto;
+			}
+			#columns td {
+				vertical-align: top;
+			}
+			.card {
+				background-color: rgba(0, 0, 0, 0.4);
+				margin: 20px;
+				padding: 10px;
+			}
+			.cardfirst {
+				background-color: rgba(0, 0, 0, 0.4);
+				padding: 10px;
+				width: calc(40vw - 60px);
+				display: inline-block;
+			}
+			a, a:link, a:visited {
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="color: #FFFFDD;"><br />Calder Young</h1>
+		<h3>
+			<span style="color: #FFEDDFF;">My, City;</span>
+			&ensp;
+			Major: <span style="color: #DDFFFF;">Computer Science</span>
+		</h3>
+		<br />
+		<br />
+		<div class="cardfirst">
+			<h2>My Web Design Experience</h2>
+			<p style="margin:10px 30px;">
+				I first learned HTML and CSS when I was around 8 or 9 years old. I read a textbook called
+				'Learning Web Design' that taught me almost everything I know to this day. I haven't
+				developed many real public 'websites' in years now, the bulk of my experience with HTML
+				and CSS is mostly applied in different projects not directly related to hosting a site
+				but projects like creating UI for apps made with frameworks like Electron and Cromium
+				Embedded Framework. I have experience with almost all HTML/CSS features used in modern HTML5
+				and I have a deep understanding in how to use Javascript to make these features dynamic
+				using the document object model or jQuery.
+		</div>
+		<table id="columns">
+			<tr>
+				<td>
+					<div class="card">
+						<h2>My Favorite Place:</h2>
+						<img src="favorite_place.png" width="200" height="200" style="margin:20px;" />
+						<p>(My room in my house)</p>
+					</div>
+				</td>
+				<td>
+					<div class="card">
+						<h2>My favorite restaurant:</h2>
+						<p>&emsp;<a href="https://www.mcdonalds.com/">https://www.mcdonalds.com/</a></p>
+					</div>
+					<div class="card">
+						<h2>Subscribe to my News Letter:</h2>
+						<form action="submit.php" method="POST">
+							<p>&emsp;First Name:&emsp;<input type="text" name="first_name" /></p>
+							<p>&emsp;Last Name:&emsp;<input type="text" name="last_name" /></p>
+							<p>&emsp;Email:&emsp;<input type="text" name="email" /></p>
+							<p>&emsp;Add me to the list?:&emsp;<input type="checkbox" name="check" /></p>
+							<p>&emsp;&emsp;<input type="submit" /></p>
+						</form>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

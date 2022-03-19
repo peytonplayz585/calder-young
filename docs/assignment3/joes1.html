@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Joe's Hotdogs</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="joes1.js"></script>
+		<link rel="stylesheet" type="text/css" href="joes.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h1 id="header">Joe's Hotdogs</h1>
+			<div class="indent">
+				<div id="take_order">
+					<h3 style="margin:20px 0px;">May I take your order?</h3>
+					<div class="menu_item" id="menu_item_hotdog">
+						<h4>Hotdog</h4>
+						<p><b>$4.00</b> - 400 calories</p>
+						<p class="cart" id="menu_item_hotdog_cart" style="display:none;"></p>
+					</div>
+					<div class="menu_item" id="menu_item_fries">
+						<h4>Fries</h4>
+						<p><b>$3.50</b> - 350 calories</p>
+						<p class="cart" id="menu_item_fries_cart" style="display:none;"></p>
+					</div>
+					<div class="menu_item" id="menu_item_soda">
+						<h4>Soda</h4>
+						<p><b>$1.50</b> - 150 calories</p>
+						<p class="cart" id="menu_item_soda_cart" style="display:none;"></p>
+					</div>
+					<div class="menu_item" id="menu_item_sauerkraut">
+						<h4>Sauerkraut</h4>
+						<p><b>$1.00</b> - 100 calories</p>
+						<p class="cart" id="menu_item_sauerkraut_cart" style="display:none;"></p>
+					</div>
+					<div id="cart" style="display:none;">
+						<p id="to_clear">right click to remove an item from your order</p>
+						<div id="total">
+							Total: <div id="total_price">$0.00</div>
+						</div>
+					</div>
+					<p style="text-align:right;zoom:1.5;"><button id="checkout" style="display:none;">Complete Order</button></p>
+				</div>
+				<div id="order_complete" style="display:none;">
+					<h3 style="margin:20px 0px;">Thank you for choosing Joe's! Here is your food:</h3>
+					<ul id="receipt">
+						<li>$4.00 - Hotdog</li>
+						<li>$3.50 - Hotdog</li>
+						<li>$3.50 - Hotdog</li>
+						<li>$3.50 - Hotdog</li>
+					</ul>
+					<p id="receipt_total">Total: $69.99</p>
+					<p style="text-align:center;"><button id="return">Return to Menu</button></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
