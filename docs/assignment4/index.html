@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 4</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="index.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+	<body>
+		<h1>Wordle</h1>
+		<p style="display:none;" id="scores"></p> 
+		<h3>Guess the 5 letter word:</h3>
+		<div id="guessWrapper">
+		</div>
+		<p id="remaining"></p> 
+		<h3 id="notAWord" style="display:none;"></h3>
+		<h3 id="noneRemaining" style="display:none;">0 tries remaining!</h3> 
+		<p style="text-align:center;">
+			<button id="clear">Clear</button>&emsp;
+			<button id="guess" style="font-weight:bold;">Guess</button>&emsp;
+			<button id="newGame">New Game</button>
+		</p>
+		<div id="result" style="display:none;">
+			<h3 id="resultWord"></h3>
+			<p id="resultList"></p>
+		</div>
+		<p id="enableDebugContainer">
+			<input type="checkbox" id="enableDebug" />&nbsp;Enable Debug
+		</p>
+		<h2 id="debug" style="display:none;">
+			<span id="debugText"></span>
+		</h2>
+	</body>
+</html>

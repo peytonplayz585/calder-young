@@ -1,0 +1,83 @@
+
+body {
+	font-family: Ubuntu;
+	text-align:center;
+	zoom: 1.4;
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		zoom: 1.0;
+	}
+}
+
+@media only screen and (max-height: 700px) {
+	body {
+		zoom: 1.0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		zoom: 0.8;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+	body {
+		zoom: 0.8;
+	}
+}
+
+button {
+	font-family: Ubuntu;
+	font-size: 1.0em;
+}
+
+.letterField {
+	width: 1.4em;
+	height: 1.3em;
+	font-size: 2em;
+	text-align: center;
+	font-family: serif;
+	vertical-align: middle;
+}
+
+#result {
+	min-width:250px;
+	max-width:500px;
+	margin:auto;
+	text-align:left;
+}
+
+#remaining, #scores {
+	font-size: 1.2em;
+}
+
+#scores {
+	margin-block-start: 5px;
+	margin-block-end: 10px;
+}
+
+#noneRemaining, #notAWord {
+	color: #DD0000;
+}
+
+#enableDebugContainer {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+}
+
+#debug {
+	position: fixed;
+	bottom: 10px;
+	left: 0px;
+	right: 0px;
+}
+
+#debugText {
+	background-color: white;
+}
